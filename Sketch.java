@@ -56,21 +56,22 @@ public class Sketch extends PApplet {
     // Drawing Quadrant 4
 
     // Drawing petals
-      for(int intAngle = 0; intAngle < 360; intAngle += 45){
-        fill(255, 0, 0);
-        stroke(0, 0, 0);
-        strokeWeight((float) 0.004 * height);
+    for(int intAngle = 0; intAngle < 360; intAngle += 45){
+      fill(255, 0, 0);
+      stroke(0, 0, 0);
+      strokeWeight((float) 0.004 * height);
 
-        // spacing out the petals
-        pushMatrix();
+      // spacing out the petals
+      pushMatrix();
         translate((width/2) + width/4, (height/2) + height/4);
         rotate(radians(intAngle));
         ellipse(0, 0, height / (float) 19.5, height / (float)3.5);
-        popMatrix();
+      popMatrix();
         }  
-        // Center of the Flower
-        fill(255, 204, 51);
-        noStroke();
-        ellipse((width/2) + width / 4, (height/2) + height / 4, 45, 45);
+    
+     // Center of the Flower
+      fill(255, 204, 51);
+      noStroke();
+      ellipse((width/2) + width / 4, (height/2) + height / 4, 45, 45);
     }
 }
